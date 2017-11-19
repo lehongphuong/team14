@@ -1,0 +1,13 @@
+.bg-skin-lp {
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+}
+body {
+    padding-top: 80px; 
+ }
+ .starter-template {
+     padding: 3rem 1.5rem;
+     text-align: center;
+ }

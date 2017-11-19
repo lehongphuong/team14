@@ -1,0 +1,46 @@
+<h1>Control</h1>
+<h3>food</h3>
+<!-- Login form -->
+<form>
+    <p class="h5 text-center mb-4">Food</p>
+
+    <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input type="text" id="defaultForm-email" #name class="form-control" mdbActive>
+        <label for="defaultForm-email">Your name</label>
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input type="number" id="defaultForm-pass" #price class="form-control" mdbActive>
+        <label for="defaultForm-pass">Your Price</label>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-default waves-light" (click)="addFood(name.value, price.value)" mdbRippleRadius>add food</button>
+    </div>
+</form>
+<!-- Login form -->
+<h1>List of database</h1>
+<ul> 
+    <h1>food</h1>
+    <div *ngFor="let food of (food$ | async)"> 
+            <h3>{{food.name}}</h3>
+            <h5>{{food.price}}</h5> 
+    </div>
+    <h1>table</h1>
+        <div *ngFor="let table of table$ | async">
+            <ngb-alert type="info" [dismissible]="false">
+                <h3>{{table.name}}</h3>
+            </ngb-alert>
+        </div>
+    <h1>order</h1>
+    <div *ngFor="let order of order$ | async">
+        <ngb-alert type="info" [dismissible]="false">
+            <h3>{{order.idFood}}</h3>
+            <h5>{{order.idTable}}</h5>
+            <h5>{{order.status}}</h5>
+            <h5>{{order.quantity}}</h5>
+        </ngb-alert> 
+    </div>
+</ul>

@@ -1,0 +1,30 @@
+<!-- DESKS -->
+<div class="row guest-queue-label">
+        <b></b> <span><button
+                class="guest-queue" data-target="#homeModal" data-toggle="modal"
+                >4</button></span>
+</div>
+<a class="btn-floating btn-lg purple-gradient waves-light" mdbRippleRadius><i class="fa fa-bolt"></i></a>
+<!-- DESKS -->
+<h1>Danh sách các bàn</h1>
+<div class="container">
+    <div class="row desks">
+        <div class="col-xs-3 col-sm-2 col-md-1 desk" *ngFor="let order of (orders | async); let i = index" [attr.data-index]="i" data-target="#homeModal"
+        data-toggle="modal" (click)="onClickDesk(order.id)">
+            <div class="row desk-amount">
+                <b></b> <span style="color: Black; "></span>
+            </div>
+            <div class="row ">
+                <p class="desk-name">{{i+1}}</p>
+            </div>
+            <div class="row desk-image ">
+                <div *ngIf="order.status == 0">
+                    <img class="desk-image" src="https://image.ibb.co/hWgaTR/free_desk.png">
+                </div>
+                <div *ngIf="order.status == 1">
+                    <img class="desk-image" src="https://image.ibb.co/nQeUoR/busy_desk.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

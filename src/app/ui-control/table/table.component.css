@@ -1,0 +1,96 @@
+
+.guest-queue-label {
+	margin-top:0px;
+	margin-bottom:10px; 
+	margin-left:10px; 
+	margin-right:10px;
+	font-size: 13px;
+	text-align: left;
+	color: Brown;
+}
+
+.serving-queue-label {
+	margin-top:0px;
+	margin-bottom:5px; 
+	margin-left:10px; 
+	margin-right:10px;
+	font-size: 15px;
+	text-align: left;
+	color: DarkGreen;
+}
+
+
+.guest-queue {
+	text-align: center;
+	margin-right: 5px;
+	font-size: 14px;
+	border-radius: 50%;
+	color: White;
+	background-color: Brown ;
+	width: 25px;
+	height: 25px;
+}
+
+.serving-queue {
+	text-align: center;
+	margin-right: 5px;
+	font-size: 18px;
+	border-radius: 50%;
+	color: White;
+	background-color: DarkGreen ;
+	width: 30px;
+	height: 30px;
+}
+
+
+/* DESK ****************/
+.desks {
+	margin-top:0px;
+	margin-bottom:0px; 
+	margin-left:0px; 
+	margin-right:0px;
+}
+
+.desk {
+	padding:0px; 
+	width: 70px; 
+	height: 70px; 
+	border: 1px solid Chocolate;
+	border-radius: 15px; 
+	margin-top: 10px; 
+	margin-left:5px;
+}
+
+
+
+.desk-amount {
+	text-align: center;
+	padding: 0px;
+	color: Red;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.desk-name {
+	text-align: center;
+	position: relative;
+	bottom: 2px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+	color: White;
+	background: Brown;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 27px;
+	height:27px;
+}
+
+.desk-image {
+	position: relative;
+	bottom: 12px;
+	margin: auto;
+	width: 60px;
+	height: 40px;
+}
